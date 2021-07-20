@@ -9,6 +9,7 @@ import Login from './Login/Login';
 import Signup from './Signup/Signup';
 import Profile from './Login/Profile/Profile';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Booking from './Booking/Booking';
 
 const App = () => {
     // useEffect(() => {
@@ -38,6 +39,9 @@ const App = () => {
     return (
         <Router>
             <Switch>
+                <Route path="/booking">
+                    <Booking />
+                </Route>
                 <Route path="/instructors">
                     <Instructors />
                 </Route>
